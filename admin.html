@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | ANN</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="page-admin">
+    <div class="admin-layout">
+        <aside class="admin-sidebar" id="admin-sidebar">
+            <div class="logo text-center" style="padding: 20px;">
+                <span class="logo-ann">ANN</span>
+                <div style="color:white; font-size: 12px;">Admin Panel</div>
+            </div>
+            <nav class="admin-nav">
+                <ul>
+                    <li><a href="#" class="active" data-tab="dashboard">Dashboard</a></li>
+                    <li><a href="#" data-tab="manage-news">Manage News</a></li>
+                    <li><a href="#" data-tab="add-news">Add/Edit News</a></li>
+                    <li><a href="index.html">← Back to Site</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="admin-main">
+            <header class="admin-header">
+                <button id="admin-menu-btn" class="hamburger">☰</button>
+                <h2>Dashboard Overview</h2>
+                <button id="theme-toggle">🌓</button>
+            </header>
+            
+            <div class="admin-content">
+                <!-- Dashboard Tab -->
+                <div id="tab-dashboard" class="tab-content active">
+                    <div class="stats-grid">
+                        <div class="stat-card"><h3>Total News</h3><p id="stat-total">0</p></div>
+                        <div class="stat-card"><h3>Published</h3><p id="stat-published">0</p></div>
+                        <div class="stat-card"><h3>Drafts</h3><p id="stat-drafts">0</p></div>
+                    </div>
+                </div>
+
+                <!-- Manage News Tab -->
+                <div id="tab-manage-news" class="tab-content">
+                    <h3>News Management</h3>
+                    <div class="table-responsive">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Headline</th>
+                                    <th>Category</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="admin-news-list">
+                                <!-- Loaded via JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Add/Edit News Tab -->
+                <div id="tab-add-news" class="tab-content">
+                    <h3 id="form-title">Add New Article</h3>
+                    <form id="news-form" class="admin-form">
+                        <input type="hidden" id="news-id">
+                        <div class="form-group">
+                            <label>Headline</label>
+                            <input type="text" id="news-title" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Short Description</label>
+                            <textarea id="news-summary" rows="2" required></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Category</label>
+                                <select id="news-category" required>
+                                    <option>Madhya Pradesh</option>
+                                    <option>India</option>
+                                    <option>Politics</option>
+                                    <option>Sports</option>
+                                    <option>Education</option>
+                                    <option>Crime</option>
+                                    <option>Entertainment</option>
+                                    <option>Business</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Author</label>
+                                <input type="text" id="news-author" value="ANN Desk" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Image URL</label>
+                            <input type="text" id="news-image" placeholder="https://..." required>
+                        </div>
+                        <div class="form-group">
+                            <label>Content</label>
+                            <textarea id="news-content" rows="6" required></textarea>
+                        </div>
+                        <div class="form-row checkbox-row">
+                            <label><input type="checkbox" id="news-breaking"> Breaking News</label>
+                            <label><input type="checkbox" id="news-featured"> Featured News</label>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary" id="btn-publish">Publish News</button>
+                            <button type="button" class="btn btn-outline" id="btn-draft">Save Draft</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="toast" class="toast"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>

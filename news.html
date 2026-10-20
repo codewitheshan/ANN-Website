@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News | ANN</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="page-news">
+    <header class="main-header">
+        <div class="top-bar container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-ann">ANN</span>
+                    <span class="logo-text">Ashish News Network</span>
+                </a>
+            </div>
+            <div class="header-actions">
+                <button id="theme-toggle">🌓</button>
+                <button class="hamburger" id="mobile-menu-btn">☰</button>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list container" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html" class="active">Latest News</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container page-spacing">
+        <div class="page-header">
+            <h1>Latest News</h1>
+            <div class="category-filters" id="category-filters">
+                <button class="filter-btn active" data-filter="All">All</button>
+                <button class="filter-btn" data-filter="Madhya Pradesh">Madhya Pradesh</button>
+                <button class="filter-btn" data-filter="India">India</button>
+                <button class="filter-btn" data-filter="Politics">Politics</button>
+                <button class="filter-btn" data-filter="Sports">Sports</button>
+                <button class="filter-btn" data-filter="Education">Education</button>
+            </div>
+        </div>
+        
+        <div class="news-grid-large" id="all-news-grid">
+            <!-- Loaded via JS -->
+        </div>
+        <div class="pagination" id="pagination">
+            <!-- Loaded via JS -->
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 ANN — Ashish News Network.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

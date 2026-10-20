@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | ANN</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="page-gallery">
+    <header class="main-header">
+        <div class="top-bar container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-ann">ANN</span>
+                    <span class="logo-text">Ashish News Network</span>
+                </a>
+            </div>
+            <div class="header-actions"><button id="theme-toggle">🌓</button></div>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list container" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container page-spacing">
+        <h1>Photo Gallery</h1>
+        <div class="gallery-grid" id="gallery-grid">
+            <!-- Loaded via JS -->
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="modal">
+        <div class="modal-content lightbox-content">
+            <span class="close-modal">&times;</span>
+            <img id="lightbox-img" src="" alt="Gallery Image">
+            <div class="lightbox-controls">
+                <button id="prev-img">❮</button>
+                <span id="img-counter">1 / 1</span>
+                <button id="next-img">❯</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

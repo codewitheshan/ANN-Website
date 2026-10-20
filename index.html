@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANN — Ashish News Network | Home</title>
+    <meta name="description" content="Latest news, breaking news, politics, sports, and more from Ashish News Network.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="page-home">
+    <header class="main-header">
+        <div class="top-bar container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-ann">ANN</span>
+                    <span class="logo-text">Ashish News Network</span>
+                </a>
+            </div>
+            <div class="header-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme">🌓</button>
+                <div class="search-box">
+                    <input type="text" placeholder="Search news...">
+                    <button>🔍</button>
+                </div>
+                <button class="hamburger" id="mobile-menu-btn">☰</button>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list container" id="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="news.html">Latest News</a></li>
+                <li><a href="news.html?category=Madhya Pradesh">Madhya Pradesh</a></li>
+                <li><a href="news.html?category=India">India</a></li>
+                <li><a href="news.html?category=Politics">Politics</a></li>
+                <li><a href="news.html?category=Sports">Sports</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+        <div class="breaking-news-bar">
+            <div class="breaking-label">🔴 BREAKING NEWS</div>
+            <div class="ticker-wrap">
+                <div class="ticker" id="breaking-ticker">
+                    <!-- Loaded via JS -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section container">
+            <div class="hero-grid" id="hero-grid">
+                <!-- Loaded via JS -->
+            </div>
+        </section>
+
+        <section class="container layout-with-sidebar">
+            <div class="main-content">
+                <h2 class="section-title">Latest News</h2>
+                <div class="news-grid" id="latest-news-grid">
+                    <!-- Loaded via JS -->
+                </div>
+                <a href="news.html" class="btn btn-outline center-btn">View All News</a>
+            </div>
+            <aside class="sidebar">
+                <h2 class="section-title">Trending News</h2>
+                <ol class="trending-list" id="trending-list">
+                    <!-- Loaded via JS -->
+                </ol>
+                
+                <div class="follow-box">
+                    <h3>Follow ANN</h3>
+                    <p>Get the latest updates directly on your feed.</p>
+                    <div class="social-links">
+                        <a href="#">FB</a>
+                        <a href="#">X (TW)</a>
+                        <a href="#">IG</a>
+                        <a href="#">YT</a>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="logo-ann">ANN</span>
+                <p>Ashish News Network delivers truth, facts, and the latest coverage across India and the globe.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin.html">Admin Dashboard</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p>📍 Bhopal, Madhya Pradesh, India</p>
+                <p>📧 contact@ashishnews.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 ANN — Ashish News Network. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Go to top">↑</button>
+    <script src="js/script.js"></script>
+</body>
+</html>

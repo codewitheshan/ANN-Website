@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video News | ANN</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="page-videos">
+    <header class="main-header">
+        <div class="top-bar container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-ann">ANN</span>
+                    <span class="logo-text">Ashish News Network</span>
+                </a>
+            </div>
+            <div class="header-actions"><button id="theme-toggle">🌓</button></div>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list container" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videos.html" class="active">Videos</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container page-spacing">
+        <h1>Video News</h1>
+        <div class="video-grid" id="video-grid">
+            <!-- Loaded via JS -->
+        </div>
+    </main>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content video-modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container" id="video-container"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
